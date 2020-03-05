@@ -5,17 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Particles</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
- 
+    <div id="particles-js"></div>
+    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-    <canvas class="background"></canvas>
-    <script src="path/to/particles.min.js"></script>
-    <script src="particles.js"></script>
+
+    <!-- stats - count particles -->
+    <script type="text/javascript">
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', 'bilder/particlesjs-config.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+
+<script src="particles.js"></script>
+
+
+    <!-- <canvas class="background"></canvas> -->
+
+
 </body>
 
 </html>
