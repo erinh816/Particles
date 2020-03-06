@@ -1,23 +1,3 @@
-// window.onload = function() {
-// 	Particles.init({
-// 		selector: '.background'
-// 	});
-// };
-
-// var particles = Particles.init(
-// 	{
-// 		// options
-// 	}
-// );
-// // E.g. gets called on a button click
-// function pause() {
-// 	particles.pauseAnimation();
-// }
-// // E.g. gets called on a button click
-// function resume() {
-// 	particles.resumeAnimation();
-// }
-
 particlesJS('particles-js', {
 	particles: {
 		number: {
@@ -68,7 +48,9 @@ particlesJS('particles-js', {
 		line_linked: {
 			enable: true,
 			distance: 150,
-			color: '#ffffff',
+			color: {
+				value: ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"]
+			},
 			opacity: 0.4,
 			width: 1
 		},
